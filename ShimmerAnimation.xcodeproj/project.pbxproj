@@ -13,6 +13,7 @@
 		68AB8D7528DF24A700128142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AB8D7328DF24A700128142 /* Main.storyboard */; };
 		68AB8D7728DF24A900128142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68AB8D7628DF24A900128142 /* Assets.xcassets */; };
 		68AB8D7A28DF24A900128142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AB8D7828DF24A900128142 /* LaunchScreen.storyboard */; };
+		68AB8D8328DF270800128142 /* ShimmerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 68AB8D8228DF270800128142 /* ShimmerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68AB8D8328DF270800128142 /* ShimmerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = ShimmerAnimation;
+			packageProductDependencies = (
+				68AB8D8228DF270800128142 /* ShimmerSwift */,
+			);
 			productName = ShimmerAnimation;
 			productReference = 68AB8D6A28DF24A700128142 /* ShimmerAnimation.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 68AB8D6128DF24A700128142;
+			packageReferences = (
+				68AB8D8128DF270800128142 /* XCRemoteSwiftPackageReference "ShimmerSwift" */,
+			);
 			productRefGroup = 68AB8D6B28DF24A700128142 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68AB8D8128DF270800128142 /* XCRemoteSwiftPackageReference "ShimmerSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BeauNouvelle/ShimmerSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68AB8D8228DF270800128142 /* ShimmerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68AB8D8128DF270800128142 /* XCRemoteSwiftPackageReference "ShimmerSwift" */;
+			productName = ShimmerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 68AB8D6228DF24A700128142 /* Project object */;
 }
