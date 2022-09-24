@@ -27,8 +27,6 @@ class ViewController: UIViewController {
         insertUI()
         basicSetUI()
         anchorUI()
-        
-        
     }
     
     @objc func speedSliderValueChange(_ sender: UISlider) {
@@ -42,7 +40,7 @@ class ViewController: UIViewController {
         shimmerView.shimmerOpacity = value
         opacitySliderLabel.text = "Opacity \(value)"
     }
-
+    
     func insertUI() {
         view.addSubview(shimmerView)
         shimmerView.addSubview(button)
@@ -85,7 +83,7 @@ class ViewController: UIViewController {
         opacitySlider.minimumTrackTintColor = .link
         opacitySlider.thumbTintColor = .black
         opacitySlider.addTarget(self, action: #selector(opacitySliderValueChagne(_:)), for: .valueChanged)
-
+        
     }
     
     func anchorUI() {
@@ -106,6 +104,5 @@ class ViewController: UIViewController {
         stackView.topAnchor.constraint(equalTo: shimmerView.bottomAnchor, constant: 30).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
     }
-
 }
 
